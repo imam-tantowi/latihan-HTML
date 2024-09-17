@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Utama</title>
+    <style>
+        header {
+            background-color: #28a745;
+            color: white;
+            padding: 5px;
+            text-align: center;
+        }
+		body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+		.btn {
+            padding: 15px 30px;
+            font-size: 18px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+		.container {
+            max-width: 1200px;
+			margin top: 10px ;
+			margin bottom: 10px ;
+            margin: 80px ;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .icon {
+            font-size: 100px;
+            color: #4CAF50;
+            cursor: pointer;
+        }
+        .icon:hover {
+            color: #45a049;
+        }
+		.footer {
+        background-color: #333;
+        color: white;
+        padding: 10px 0;
+        text-align: center;
+    }
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+    .social-icon {
+        width: 20px;
+        height: 20px;
+        fill: white;
+    }
+    </style>
+</head>
+<body>
+            <header>
+			<h2>Komposisi dalam Fotografi</h2>
+			</header>
+         
+		 <div class="container">
+            <p>Komposisi adalah cara menyusun elemen-elemen dalam foto untuk menciptakan gambar yang menarik.</p>
+			<p>Berikut adalah 6 teknik komposisi penting:</p>
+            
+                <h3>1. Aturan Sepertiga</h3>
+                <svg viewBox="0 0 300 200" width="300" height="200">
+                    <rect width="300" height="200" fill="#f0f0f0"/>
+                    <line x1="100" y1="0" x2="100" y2="200" stroke="#333" stroke-width="2"/>
+                    <line x1="200" y1="0" x2="200" y2="200" stroke="#333" stroke-width="2"/>
+                    <line x1="0" y1="66.67" x2="300" y2="66.67" stroke="#333" stroke-width="2"/>
+                    <line x1="0" y1="133.33" x2="300" y2="133.33" stroke="#333" stroke-width="2"/>
+                    <circle cx="100" cy="66.67" r="5" fill="red"/>
+                    <circle cx="200" cy="133.33" r="5" fill="red"/>
+                   <animateTransform attributeName="transform" type="translate" values="0,0;0,10;0,0" additive="sum" dur="3s" repeatCount="indefinite"/>
+                </svg>
+                <p>Membagi frame menjadi 9 bagian dan menempatkan subjek di persimpangan garis.</p>
+
+                <h3>2. Simetri</h3>
+                <svg viewBox="0 0 300 200" width="300" height="200">
+                    <rect width="300" height="200" fill="#f0f0f0"/>
+                    <line x1="150" y1="0" x2="150" y2="200" stroke="#333" stroke-dasharray="5,5"/>
+                    <rect x="50" y="50" width="80" height="100" fill="#3498db"/>
+                    <rect x="170" y="50" width="80" height="100" fill="#3498db"/>
+                    <animateTransform attributeName="transform" type="scale" values="1;1.1;1" additive="sum" dur="3s" repeatCount="indefinite"/>
+                </svg>
+                <p>Menciptakan keseimbangan dengan menempatkan elemen secara simetris.</p>
+
+                <h3>3. Bingkai Alami</h3>
+                <svg viewBox="0 0 300 200" width="300" height="200">
+                    <rect width="300" height="200" fill="#f0f0f0"/>
+                    <path d="M0,0 L300,0 L300,200 L0,200 Z M50,50 L250,50 L250,150 L50,150 Z" fill="#3498db"/>
+                    <rect x="100" y="75" width="100" height="50" fill="#e74c3c"/>
+                    <animateTransform attributeName="transform" type="translate" values="0,0;0,10;0,0" additive="sum" dur="3s" repeatCount="indefinite"/>
+                </svg>
+                <p>Menggunakan elemen di sekitar untuk membingkai subjek utama.</p>
+
+                <h3>4. Garis Penuntun</h3>
+                <svg viewBox="0 0 300 200" width="300" height="200">
+                    <rect width="300" height="200" fill="#f0f0f0"/>
+                    <line x1="0" y1="200" x2="300" y2="0" stroke="#3498db" stroke-width="2"/>
+                    <line x1="0" y1="150" x2="300" y2="50" stroke="#e74c3c" stroke-width="2"/>
+                    <circle cx="150" cy="100" r="20" fill="#2ecc71"/>
+                    <animateTransform attributeName="transform" type="skewX" values="0;10;0;-10;0" dur="5s" repeatCount="indefinite"/>
+                </svg>
+                <p>Menggunakan garis alami untuk mengarahkan mata ke subjek utama.</p>
+
+                <h3>5. Ruang Negatif</h3>
+                <svg viewBox="0 0 300 200" width="300" height="200">
+                    <rect width="300" height="200" fill="#f0f0f0"/>
+                    <rect x="200" y="50" width="80" height="100" fill="#3498db"/>
+                    <animateTransform attributeName="transform" type="translate" values="-10,0;0,0;-10,0" dur="3s" repeatCount="indefinite"/>
+                </svg>
+                <p>Menggunakan area kosong untuk menekankan subjek utama.</p>
+
+                <h3>6. Pola dan Pengulangan</h3>
+                <svg viewBox="0 0 300 200" width="300" height="200">
+                    <rect width="300" height="200" fill="#f0f0f0"/>
+                    <g>
+                        <rect x="25" y="25" width="50" height="50" fill="#3498db"/>
+                        <rect x="85" y="25" width="50" height="50" fill="#3498db"/>
+                        <rect x="145" y="25" width="50" height="50" fill="#3498db"/>
+                        <rect x="205" y="25" width="50" height="50" fill="#3498db"/>
+                        <rect x="25" y="85" width="50" height="50" fill="#3498db"/>
+                        <rect x="85" y="85" width="50" height="50" fill="#3498db"/>
+                        <rect x="145" y="85" width="50" height="50" fill="#3498db"/>
+                        <rect x="205" y="85" width="50" height="50" fill="#3498db"/>
+                        <animateTransform attributeName="transform" type="rotate" from="0 150 100" to="360 150 100" dur="10s" repeatCount="indefinite"/>
+                    </g>
+                </svg>
+                <p>Memanfaatkan pola berulang untuk menciptakan visual yang menarik.</p>
+            </div>
+ 	<!-- Tombol yang membawa pengguna ke halaman Sebelumnya -->
+    <center><button class="btn" onclick="window.location.href='Fotografi.html'">Halaman Sebelumnya</button></center>
+
+	<p> </p>
+</body>
+<footer class="footer">
+    <div class="social-icons">
+        </a>
+        <a href="https://instagram.com/imamtantowi__">
+            <svg class="social-icon" viewBox="0 0 24 24">
+                <path d="M12 2.16c3.2 0 3.58.01 4.85.07 3.25.15 4.77 1.69 4.92 4.92.06 1.27.07 1.65.07 4.85 0 3.2-.01 3.58-.07 4.85-.15 3.23-1.67 4.77-4.92 4.92-1.27.06-1.65.07-4.85.07-3.2 0-3.58-.01-4.85-.07-3.25-.15-4.77-1.69-4.92-4.92-.06-1.27-.07-1.65-.07-4.85 0-3.2.01-3.58.07-4.85.15-3.23 1.67-4.77 4.92-4.92 1.27-.06 1.65-.07 4.85-.07zM12 0C8.74 0 8.33.01 7.05.07 2.7.27.27 2.69.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.2 4.36 2.62 6.78 6.98 6.98 1.28.06 1.69.07 4.95.07s3.67-.01 4.95-.07c4.36-.2 6.78-2.62 6.98-6.98.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.2-4.36-2.62-6.78-6.98-6.98C15.67.01 15.26 0 12 0zm0 5.84c-3.4 0-6.16 2.76-6.16 6.16s2.76 6.16 6.16 6.16 6.16-2.76 6.16-6.16S15.4 5.84 12 5.84zm0 10.15c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm6.41-11.85c-.8 0-1.44.64-1.44 1.44s.64 1.44 1.44 1.44c.8 0 1.44-.64 1.44-1.44s-.64-1.44-1.44-1.44z"/>
+            </svg>
+        </a>
+		Muhammad Imam Tanthowi (1102422060)
+    </div>
+</footer>
+</html>
